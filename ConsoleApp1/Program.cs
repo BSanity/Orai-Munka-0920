@@ -12,18 +12,24 @@ namespace ConsoleApp1 {
             //módosítsuk a programot, user darabszám is bekérhető legyen
             //legnagyobb mellett a legkisebbet is
             //hiba üzenet
-            
-           Console.WriteLine("Adjon meg 10 számot!");
-            int[] szam=new int[10];
+
+
+            Console.WriteLine("Írja be, hány számot kíván megadni: ");
+            int[] szam=new int[int.Parse(Console.ReadLine())];
+
+          
+           Console.WriteLine("Kerek"+szam.Length+"számot.");
+
+           
             int seged = 0;
             
-            for (int i = 0; i < 10; i++) 
+            for (int i = 0; i < szam.Length; i++) 
             {
                 Console.WriteLine("Írja be a "+(i+1)+". számot");
                 szam[i] = int.Parse(Console.ReadLine());
 
             }
-            for (int i = 0; i < 10; i++) 
+            for (int i = 0; i < szam.Length; i++) 
             {
                 if (seged<szam[i]) {
                     seged = szam[i];
