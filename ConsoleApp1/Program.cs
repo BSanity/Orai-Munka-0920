@@ -32,21 +32,9 @@ namespace ConsoleApp1 {
             }
             Console.WriteLine("A legnagyobb szám: "+seged);
 
-            
-            
+                       
             
             Console.ReadLine();
-
-
-
-
-
-
-
-
-
-
-
 
 
         }
